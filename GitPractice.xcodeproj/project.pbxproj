@@ -1,0 +1,650 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		769B85D32C7738D7003D4920 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769B85D22C7738D7003D4920 /* AppDelegate.swift */; };
+		769B85D72C7738D7003D4920 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769B85D62C7738D7003D4920 /* MapViewController.swift */; };
+		769B85DD2C7738D7003D4920 /* GitPractice.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 769B85DB2C7738D7003D4920 /* GitPractice.xcdatamodeld */; };
+		769B85DF2C7738D9003D4920 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 769B85DE2C7738D9003D4920 /* Assets.xcassets */; };
+		769B85E22C7738D9003D4920 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 769B85E12C7738D9003D4920 /* Base */; };
+		769B85EF2C773982003D4920 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769B85EE2C773982003D4920 /* MainTabBarViewController.swift */; };
+		769B85F22C7739C9003D4920 /* BoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769B85F12C7739C9003D4920 /* BoardViewController.swift */; };
+		769B85F72C773A0B003D4920 /* KakaoMapManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769B85F62C773A0B003D4920 /* KakaoMapManager.swift */; };
+		769B85F92C773A23003D4920 /* KakaoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769B85F82C773A23003D4920 /* KakaoManager.swift */; };
+		769B85FB2C773A34003D4920 /* OpenStreetMapManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769B85FA2C773A34003D4920 /* OpenStreetMapManager.swift */; };
+		769B85FD2C773A40003D4920 /* MapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769B85FC2C773A40003D4920 /* MapModel.swift */; };
+		769B85FF2C773A48003D4920 /* BoardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769B85FE2C773A48003D4920 /* BoardModel.swift */; };
+		769B86032C773A67003D4920 /* BoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769B86022C773A67003D4920 /* BoardViewModel.swift */; };
+		769B86052C773A71003D4920 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769B86042C773A71003D4920 /* MapViewModel.swift */; };
+		769B86082C773ABF003D4920 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 769B86072C773ABF003D4920 /* RxCocoa */; };
+		769B860A2C773ABF003D4920 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 769B86092C773ABF003D4920 /* RxSwift */; };
+		769B860D2C773ACF003D4920 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 769B860C2C773ACF003D4920 /* SnapKit */; };
+		769B86102C773ADF003D4920 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 769B860F2C773ADF003D4920 /* Kingfisher */; };
+		769B86132C773AEF003D4920 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 769B86122C773AEF003D4920 /* Alamofire */; };
+		769B86162C773AFC003D4920 /* KakaoMapsSDK-SPM in Frameworks */ = {isa = PBXBuildFile; productRef = 769B86152C773AFC003D4920 /* KakaoMapsSDK-SPM */; };
+		769B86192C773C84003D4920 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769B86182C773C84003D4920 /* MyPageViewController.swift */; };
+		769B861C2C773CA6003D4920 /* MyPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769B861B2C773CA6003D4920 /* MyPageViewModel.swift */; };
+		769B861F2C773CEB003D4920 /* MyPageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769B861E2C773CEB003D4920 /* MyPageModel.swift */; };
+		769B86212C774CAB003D4920 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 769B86202C774CAB003D4920 /* README.md */; };
+		769B86232C774CC6003D4920 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 769B86222C774CC6003D4920 /* .gitignore */; };
+		769B86252C774EAB003D4920 /* Secrets.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 769B86242C774EAB003D4920 /* Secrets.xcconfig */; };
+		769B86272C774EE1003D4920 /* CodeConvention.md in Resources */ = {isa = PBXBuildFile; fileRef = 769B86262C774EE1003D4920 /* CodeConvention.md */; };
+		769B86292C774EF0003D4920 /* CommitConvention.md in Resources */ = {isa = PBXBuildFile; fileRef = 769B86282C774EF0003D4920 /* CommitConvention.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		769B85CF2C7738D7003D4920 /* GitPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		769B85D22C7738D7003D4920 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		769B85D62C7738D7003D4920 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		769B85DC2C7738D7003D4920 /* GitPractice.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GitPractice.xcdatamodel; sourceTree = "<group>"; };
+		769B85DE2C7738D9003D4920 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		769B85E12C7738D9003D4920 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		769B85E32C7738D9003D4920 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		769B85EE2C773982003D4920 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		769B85F12C7739C9003D4920 /* BoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewController.swift; sourceTree = "<group>"; };
+		769B85F62C773A0B003D4920 /* KakaoMapManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoMapManager.swift; sourceTree = "<group>"; };
+		769B85F82C773A23003D4920 /* KakaoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoManager.swift; sourceTree = "<group>"; };
+		769B85FA2C773A34003D4920 /* OpenStreetMapManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenStreetMapManager.swift; sourceTree = "<group>"; };
+		769B85FC2C773A40003D4920 /* MapModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModel.swift; sourceTree = "<group>"; };
+		769B85FE2C773A48003D4920 /* BoardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardModel.swift; sourceTree = "<group>"; };
+		769B86022C773A67003D4920 /* BoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewModel.swift; sourceTree = "<group>"; };
+		769B86042C773A71003D4920 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		769B86182C773C84003D4920 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
+		769B861B2C773CA6003D4920 /* MyPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewModel.swift; sourceTree = "<group>"; };
+		769B861E2C773CEB003D4920 /* MyPageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageModel.swift; sourceTree = "<group>"; };
+		769B86202C774CAB003D4920 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		769B86222C774CC6003D4920 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		769B86242C774EAB003D4920 /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
+		769B86262C774EE1003D4920 /* CodeConvention.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CodeConvention.md; sourceTree = "<group>"; };
+		769B86282C774EF0003D4920 /* CommitConvention.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CommitConvention.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		769B85CC2C7738D7003D4920 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				769B86132C773AEF003D4920 /* Alamofire in Frameworks */,
+				769B86102C773ADF003D4920 /* Kingfisher in Frameworks */,
+				769B860D2C773ACF003D4920 /* SnapKit in Frameworks */,
+				769B860A2C773ABF003D4920 /* RxSwift in Frameworks */,
+				769B86082C773ABF003D4920 /* RxCocoa in Frameworks */,
+				769B86162C773AFC003D4920 /* KakaoMapsSDK-SPM in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		769B85C62C7738D7003D4920 = {
+			isa = PBXGroup;
+			children = (
+				769B86202C774CAB003D4920 /* README.md */,
+				769B86222C774CC6003D4920 /* .gitignore */,
+				769B86262C774EE1003D4920 /* CodeConvention.md */,
+				769B86282C774EF0003D4920 /* CommitConvention.md */,
+				769B86242C774EAB003D4920 /* Secrets.xcconfig */,
+				769B85D12C7738D7003D4920 /* GitPractice */,
+				769B85D02C7738D7003D4920 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		769B85D02C7738D7003D4920 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				769B85CF2C7738D7003D4920 /* GitPractice.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		769B85D12C7738D7003D4920 /* GitPractice */ = {
+			isa = PBXGroup;
+			children = (
+				769B85ED2C773962003D4920 /* App */,
+				769B85EC2C773952003D4920 /* Common */,
+				769B85E92C77393A003D4920 /* Model */,
+				769B85EA2C773947003D4920 /* View */,
+				769B85EB2C77394C003D4920 /* ViewModel */,
+				769B85DE2C7738D9003D4920 /* Assets.xcassets */,
+				769B85E02C7738D9003D4920 /* LaunchScreen.storyboard */,
+				769B85E32C7738D9003D4920 /* Info.plist */,
+				769B85DB2C7738D7003D4920 /* GitPractice.xcdatamodeld */,
+			);
+			path = GitPractice;
+			sourceTree = "<group>";
+		};
+		769B85E92C77393A003D4920 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				769B85F42C7739E7003D4920 /* Map */,
+				769B85F52C7739EC003D4920 /* Board */,
+				769B861D2C773CDE003D4920 /* MyPage */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		769B85EA2C773947003D4920 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				769B85EE2C773982003D4920 /* MainTabBarViewController.swift */,
+				769B85F02C7739B1003D4920 /* Map */,
+				769B85F32C7739CD003D4920 /* Board */,
+				769B86172C773C6E003D4920 /* MyPage */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		769B85EB2C77394C003D4920 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				769B86002C773A4D003D4920 /* Map */,
+				769B86012C773A54003D4920 /* Board */,
+				769B861A2C773C98003D4920 /* MyPage */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		769B85EC2C773952003D4920 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				769B85F62C773A0B003D4920 /* KakaoMapManager.swift */,
+				769B85F82C773A23003D4920 /* KakaoManager.swift */,
+				769B85FA2C773A34003D4920 /* OpenStreetMapManager.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		769B85ED2C773962003D4920 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				769B85D22C7738D7003D4920 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		769B85F02C7739B1003D4920 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				769B85D62C7738D7003D4920 /* MapViewController.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		769B85F32C7739CD003D4920 /* Board */ = {
+			isa = PBXGroup;
+			children = (
+				769B85F12C7739C9003D4920 /* BoardViewController.swift */,
+			);
+			path = Board;
+			sourceTree = "<group>";
+		};
+		769B85F42C7739E7003D4920 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				769B85FC2C773A40003D4920 /* MapModel.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		769B85F52C7739EC003D4920 /* Board */ = {
+			isa = PBXGroup;
+			children = (
+				769B85FE2C773A48003D4920 /* BoardModel.swift */,
+			);
+			path = Board;
+			sourceTree = "<group>";
+		};
+		769B86002C773A4D003D4920 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				769B86042C773A71003D4920 /* MapViewModel.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		769B86012C773A54003D4920 /* Board */ = {
+			isa = PBXGroup;
+			children = (
+				769B86022C773A67003D4920 /* BoardViewModel.swift */,
+			);
+			path = Board;
+			sourceTree = "<group>";
+		};
+		769B86172C773C6E003D4920 /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				769B86182C773C84003D4920 /* MyPageViewController.swift */,
+			);
+			path = MyPage;
+			sourceTree = "<group>";
+		};
+		769B861A2C773C98003D4920 /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				769B861B2C773CA6003D4920 /* MyPageViewModel.swift */,
+			);
+			path = MyPage;
+			sourceTree = "<group>";
+		};
+		769B861D2C773CDE003D4920 /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				769B861E2C773CEB003D4920 /* MyPageModel.swift */,
+			);
+			path = MyPage;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		769B85CE2C7738D7003D4920 /* GitPractice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 769B85E62C7738D9003D4920 /* Build configuration list for PBXNativeTarget "GitPractice" */;
+			buildPhases = (
+				769B85CB2C7738D7003D4920 /* Sources */,
+				769B85CC2C7738D7003D4920 /* Frameworks */,
+				769B85CD2C7738D7003D4920 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GitPractice;
+			packageProductDependencies = (
+				769B86072C773ABF003D4920 /* RxCocoa */,
+				769B86092C773ABF003D4920 /* RxSwift */,
+				769B860C2C773ACF003D4920 /* SnapKit */,
+				769B860F2C773ADF003D4920 /* Kingfisher */,
+				769B86122C773AEF003D4920 /* Alamofire */,
+				769B86152C773AFC003D4920 /* KakaoMapsSDK-SPM */,
+			);
+			productName = GitPractice;
+			productReference = 769B85CF2C7738D7003D4920 /* GitPractice.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		769B85C72C7738D7003D4920 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					769B85CE2C7738D7003D4920 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 769B85CA2C7738D7003D4920 /* Build configuration list for PBXProject "GitPractice" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 769B85C62C7738D7003D4920;
+			packageReferences = (
+				769B86062C773ABF003D4920 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				769B860B2C773ACF003D4920 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				769B860E2C773ADF003D4920 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				769B86112C773AEF003D4920 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				769B86142C773AFC003D4920 /* XCRemoteSwiftPackageReference "KakaoMapsSDK-SPM" */,
+			);
+			productRefGroup = 769B85D02C7738D7003D4920 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				769B85CE2C7738D7003D4920 /* GitPractice */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		769B85CD2C7738D7003D4920 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				769B86292C774EF0003D4920 /* CommitConvention.md in Resources */,
+				769B86232C774CC6003D4920 /* .gitignore in Resources */,
+				769B86252C774EAB003D4920 /* Secrets.xcconfig in Resources */,
+				769B86212C774CAB003D4920 /* README.md in Resources */,
+				769B85DF2C7738D9003D4920 /* Assets.xcassets in Resources */,
+				769B86272C774EE1003D4920 /* CodeConvention.md in Resources */,
+				769B85E22C7738D9003D4920 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		769B85CB2C7738D7003D4920 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				769B85D72C7738D7003D4920 /* MapViewController.swift in Sources */,
+				769B85FD2C773A40003D4920 /* MapModel.swift in Sources */,
+				769B85EF2C773982003D4920 /* MainTabBarViewController.swift in Sources */,
+				769B861C2C773CA6003D4920 /* MyPageViewModel.swift in Sources */,
+				769B85D32C7738D7003D4920 /* AppDelegate.swift in Sources */,
+				769B85DD2C7738D7003D4920 /* GitPractice.xcdatamodeld in Sources */,
+				769B85F72C773A0B003D4920 /* KakaoMapManager.swift in Sources */,
+				769B85F92C773A23003D4920 /* KakaoManager.swift in Sources */,
+				769B86192C773C84003D4920 /* MyPageViewController.swift in Sources */,
+				769B85F22C7739C9003D4920 /* BoardViewController.swift in Sources */,
+				769B86032C773A67003D4920 /* BoardViewModel.swift in Sources */,
+				769B85FF2C773A48003D4920 /* BoardModel.swift in Sources */,
+				769B85FB2C773A34003D4920 /* OpenStreetMapManager.swift in Sources */,
+				769B86052C773A71003D4920 /* MapViewModel.swift in Sources */,
+				769B861F2C773CEB003D4920 /* MyPageModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		769B85E02C7738D9003D4920 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				769B85E12C7738D9003D4920 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		769B85E42C7738D9003D4920 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		769B85E52C7738D9003D4920 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		769B85E72C7738D9003D4920 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GitPractice/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.donghyeon.GitPractice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		769B85E82C7738D9003D4920 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GitPractice/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.donghyeon.GitPractice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		769B85CA2C7738D7003D4920 /* Build configuration list for PBXProject "GitPractice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				769B85E42C7738D9003D4920 /* Debug */,
+				769B85E52C7738D9003D4920 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		769B85E62C7738D9003D4920 /* Build configuration list for PBXNativeTarget "GitPractice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				769B85E72C7738D9003D4920 /* Debug */,
+				769B85E82C7738D9003D4920 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		769B86062C773ABF003D4920 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.7.1;
+			};
+		};
+		769B860B2C773ACF003D4920 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		769B860E2C773ADF003D4920 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.12.0;
+			};
+		};
+		769B86112C773AEF003D4920 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+		769B86142C773AFC003D4920 /* XCRemoteSwiftPackageReference "KakaoMapsSDK-SPM" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kakao-mapsSDK/KakaoMapsSDK-SPM.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.10.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		769B86072C773ABF003D4920 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 769B86062C773ABF003D4920 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		769B86092C773ABF003D4920 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 769B86062C773ABF003D4920 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		769B860C2C773ACF003D4920 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 769B860B2C773ACF003D4920 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		769B860F2C773ADF003D4920 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 769B860E2C773ADF003D4920 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		769B86122C773AEF003D4920 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 769B86112C773AEF003D4920 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		769B86152C773AFC003D4920 /* KakaoMapsSDK-SPM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 769B86142C773AFC003D4920 /* XCRemoteSwiftPackageReference "KakaoMapsSDK-SPM" */;
+			productName = "KakaoMapsSDK-SPM";
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		769B85DB2C7738D7003D4920 /* GitPractice.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				769B85DC2C7738D7003D4920 /* GitPractice.xcdatamodel */,
+			);
+			currentVersion = 769B85DC2C7738D7003D4920 /* GitPractice.xcdatamodel */;
+			path = GitPractice.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 769B85C72C7738D7003D4920 /* Project object */;
+}
