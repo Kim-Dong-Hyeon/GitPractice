@@ -32,9 +32,9 @@
 		769B861F2C773CEB003D4920 /* MyPageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769B861E2C773CEB003D4920 /* MyPageModel.swift */; };
 		769B86212C774CAB003D4920 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 769B86202C774CAB003D4920 /* README.md */; };
 		769B86232C774CC6003D4920 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 769B86222C774CC6003D4920 /* .gitignore */; };
-		769B86252C774EAB003D4920 /* Secrets.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 769B86242C774EAB003D4920 /* Secrets.xcconfig */; };
 		769B86272C774EE1003D4920 /* CodeConvention.md in Resources */ = {isa = PBXBuildFile; fileRef = 769B86262C774EE1003D4920 /* CodeConvention.md */; };
 		769B86292C774EF0003D4920 /* CommitConvention.md in Resources */ = {isa = PBXBuildFile; fileRef = 769B86282C774EF0003D4920 /* CommitConvention.md */; };
+		E2792DF62C7762A300AD6C0E /* Secrets.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = E2792DF52C7762A300AD6C0E /* Secrets.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,9 +59,9 @@
 		769B861E2C773CEB003D4920 /* MyPageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageModel.swift; sourceTree = "<group>"; };
 		769B86202C774CAB003D4920 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		769B86222C774CC6003D4920 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		769B86242C774EAB003D4920 /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
 		769B86262C774EE1003D4920 /* CodeConvention.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CodeConvention.md; sourceTree = "<group>"; };
 		769B86282C774EF0003D4920 /* CommitConvention.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CommitConvention.md; sourceTree = "<group>"; };
+		E2792DF52C7762A300AD6C0E /* Secrets.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Secrets.xcconfig; path = ../../../Downloads/Secrets.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +88,7 @@
 				769B86222C774CC6003D4920 /* .gitignore */,
 				769B86262C774EE1003D4920 /* CodeConvention.md */,
 				769B86282C774EF0003D4920 /* CommitConvention.md */,
-				769B86242C774EAB003D4920 /* Secrets.xcconfig */,
+				E2792DF52C7762A300AD6C0E /* Secrets.xcconfig */,
 				769B85D12C7738D7003D4920 /* GitPractice */,
 				769B85D02C7738D7003D4920 /* Products */,
 			);
@@ -312,9 +312,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2792DF62C7762A300AD6C0E /* Secrets.xcconfig in Resources */,
 				769B86292C774EF0003D4920 /* CommitConvention.md in Resources */,
 				769B86232C774CC6003D4920 /* .gitignore in Resources */,
-				769B86252C774EAB003D4920 /* Secrets.xcconfig in Resources */,
 				769B86212C774CAB003D4920 /* README.md in Resources */,
 				769B85DF2C7738D9003D4920 /* Assets.xcassets in Resources */,
 				769B86272C774EE1003D4920 /* CodeConvention.md in Resources */,
