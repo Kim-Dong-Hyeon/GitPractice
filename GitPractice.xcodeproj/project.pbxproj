@@ -88,7 +88,7 @@
 				769B86222C774CC6003D4920 /* .gitignore */,
 				769B86262C774EE1003D4920 /* CodeConvention.md */,
 				769B86282C774EF0003D4920 /* CommitConvention.md */,
-				D6805D032C7762F300383CDA /* Secrets.xcconfig */,
+				769B85D12C7738D7003D4920 /* Secrets.xcconfig */,
 				769B85D12C7738D7003D4920 /* GitPractice */,
 				769B85D02C7738D7003D4920 /* Products */,
 			);
