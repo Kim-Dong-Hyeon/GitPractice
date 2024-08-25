@@ -11,10 +11,10 @@ class MapViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    view.backgroundColor = .systemBackground
+    view.backgroundColor = .white
     // Do any additional setup after loading the view.
   }
 
-
+// Map
 }
-
+//이주희 머지가 머지??
